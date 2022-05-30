@@ -5,7 +5,6 @@ import { useSelector, useDispatch } from "react-redux";
 
 const Cart = () => {
   const cart = useSelector((state) => state);
-  console.log(cart);
   const dispatch = useDispatch();
   const addition = (acc, currentvalue) => {
     return acc + currentvalue.price * currentvalue.quantity;
@@ -23,8 +22,9 @@ const Cart = () => {
               <div>
                 <img src={` ../images/${item.image}`} alt="cart" />
                 <h4>{item.name}</h4>
-                <p> price: ksh. {item.price}</p>
-                <p>amount : ksh.{item.price * item.quantity}</p>
+                <p> price: Rs. {item.price}</p>
+                
+                <p>amount : Rs.{item.price * item.quantity}</p>
                 <button
                   onClick={() => dispatch({ type: "REMOVE", payload: item })}
                 >

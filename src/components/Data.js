@@ -3,7 +3,7 @@ export const Data = [
     id: 1,
     image: "Fashion 3 Piece Mens Long Sleeve Dress Shirts.jpg",
     name: "Fashion 3 Piece Mens Long Sleeve Dress Shirts",
-    price: 450,
+    price: 500,
   },
   {
     id: 2,
